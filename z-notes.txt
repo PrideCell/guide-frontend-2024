@@ -1,0 +1,12 @@
+rafce
+
+>> npm run dev
+
+
+
+    <div className='flex gap-10 md:bg-slate-500 lg:bg-red-600'>
+      <Navbar />
+      <p>xcghj</p>
+      <h1 className='font-bold text-3xl'>dfghjklvb</h1>
+      <Footer />
+    </div>
