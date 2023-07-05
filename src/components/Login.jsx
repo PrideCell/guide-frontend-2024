@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useState } from 'react'
 const Login = () => {
   const [register, setregister] = useState(false)
   const [login, setlogin] = useState(true)
@@ -7,17 +7,17 @@ const Login = () => {
   const openRegister=(e)=>{
       e.preventDefault();
       setregister(true);
-      setlogin(false)
+      setlogin(false);
   }
   const openLogin=(e)=>{
     e.preventDefault();
-    setlogin(true)
-    setregister(false)
+    setlogin(true);
+    setregister(false);
   }
   return (
     <>
     <div id='loginbg'>
-    <div class="bg-white bg-opacity-50 backdrop-filter  p-6 rounded-lg shadow-lg ">
+   
     <div className=' lg:w-1/3 md:w-2/5 xs:w-1/2 border p-4  bg-white bg-opacity-50 backdrop-filter  p-6 rounded-lg shadow-lg'>
 
 <div className=' flex justify-center'>
@@ -75,7 +75,7 @@ const Login = () => {
 </div>  
 </div>
 
-</div> 
+
 
     
     </>
