@@ -10,3 +10,8 @@ rafce
       <h1 className='font-bold text-3xl'>dfghjklvb</h1>
       <Footer />
     </div>
+
+
+.trail {
+  background: url('./assets/loginbg.jpg')
+}
