@@ -1,4 +1,6 @@
 import './App.css';
+import About from './shared/About';
+import {Routes, Route} from 'react-router-dom';
 
 
 import Loginnavbar from './shared/Loginnavbar';
@@ -9,7 +11,11 @@ function App() {
   return (
     <div>
       <Loginnavbar />
-      <Login />
+    <Routes>
+          <Route path="/" element={<Login />}></Route>
+          <Route path="/about" element={<About />}></Route>
+
+    </Routes>
       <Footer />
     </div>
   )
