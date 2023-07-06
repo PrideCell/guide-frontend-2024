@@ -8,8 +8,8 @@ const Loginnavbar = () => {
     <img src={sistlogologin} alt="Logo" class="h-12 w-40 px-3" />
   </div>
   <div class="flex items-center mx-3">
-    <div class=" font-medium">STAFF</div>
-    <div class="ml-4  font-medium">STUDENT</div>
+    <p class=" font-medium">STAFF</p>
+    <p class="ml-4  font-medium">STUDENT</p>
   </div>
 </nav>
 

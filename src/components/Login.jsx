@@ -40,7 +40,7 @@ const Login = () => {
   <input className='py-2 mt-4 border-2 rounded-md w-3/4 bg-red-50' placeholder='    name' required='true' type="text"></input>
   </div>
 
-<div className={register ? 'flex justify-center' : 'hidden'}>
+   <div className={register ? 'flex justify-center' : 'hidden'}>
   <input className='py-2 my-4 mb-0 border-2 rounded-md w-3/4 bg-red-50' placeholder='    reg no' type="number" required='true'></input>
   </div>
 
