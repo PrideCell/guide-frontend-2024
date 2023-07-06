@@ -66,13 +66,17 @@ const Login = () => {
           <input className='py-2 my-4 mb-0 border-2 rounded-md w-3/4 bg-red-50 p-4' placeholder='reg no' type="number" required='true'></input>
           </div>
 
-
-
-
-
-        <div className='flex justify-center'>
+        <div className={register ? 'flex justify-center' : 'hidden'}>
           <input className='py-2 mt-4 border-2 rounded-md w-3/4 bg-red-50 p-4' placeholder='email' type='email' required='true'></input>
           </div>
+
+
+          <div className={login ? 'flex justify-center' : 'hidden'}>
+          <input className='py-2 mt-4 border-2 rounded-md w-3/4 bg-red-50 p-4' placeholder='Id' type='text' required='true'></input>
+          </div>
+
+
+
 
         <div className='flex justify-center'>
           <input className='py-2 my-4 border-2 rounded-md w-3/4 bg-red-50 p-4' placeholder='password' type='password' required='true'></input>
