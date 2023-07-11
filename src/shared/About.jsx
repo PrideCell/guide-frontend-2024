@@ -5,7 +5,10 @@ const About = () => {
     <>
     
    
-    <div id='loginbg'></div>
+    <div id=''>
+
+      <p>About section</p>
+    </div>
 
    
     </>

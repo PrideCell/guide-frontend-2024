@@ -1,5 +1,6 @@
 import './App.css';
 import About from './shared/About';
+import Slecetteammember from './components/Selectteammember';
 import {Routes, Route} from 'react-router-dom';
 
 
@@ -14,7 +15,7 @@ function App() {
     <Routes>
           <Route path="/" element={<Login />}></Route>
           <Route path="/about" element={<About />}></Route>
-
+          <Route path="/selectteammember" element={<Slecetteammember />}></Route>
     </Routes>
       <Footer />
     </div>

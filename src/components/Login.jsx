@@ -1,6 +1,13 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState }  from 'react';
+import { useNavigate } from 'react-router-dom';
 const Login = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/selectteammember');
+  }
+
   const [register, setregister] = useState(false)
   const [login, setlogin] = useState(true)
   const [stafflogin, setstafflogin] = useState(true)
@@ -36,7 +43,7 @@ const Login = () => {
     <>
     <div id='loginbg'>
    
-    <div className=' lg:w-1/3 md:w-2/5 xs:w-1/2 border p-4  bg-white bg-opacity-50 backdrop-filter  p-6 rounded-lg shadow-lg'>
+    <div className=' lg:w-1/3 md:w-2/5 xs:w-1/2 border bg-white bg-opacity-50 backdrop-filter  p-6 rounded-lg shadow-lg'>
 
         <div className={setlogin ? ' flex justify-center' : 'hidden'}>
           <h1 className={ login ? 'p-4 font-semibold' : 'hidden' }>LOGIN</h1>
@@ -83,7 +90,9 @@ const Login = () => {
           </div>
 
           <div className='flex justify-center'>
-          <button className='bg-red-900 text-white px-6 py-2 rounded-md'>Submit</button>
+        <button onClick={() => handleClick()}  className='bg-red-900 text-white px-6 py-2 rounded-md'>Submit</button>
+
+        
           </div>
 
 </form>
